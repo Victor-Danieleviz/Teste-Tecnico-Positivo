@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Roboto Condensed', sans-serif ;
+  text-decoration: none;
+  
+  list-style: none;
+}
+
+header {
+  width: 100vw;
+  background-color: #313131;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  height: 80px;
+
+  margin: 0px 320px;
+}
+
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.vaio-logo {
+  width: 119px;
+  height: 28px;
+}
+
+.links-list {
+  display: flex;
+  gap: 47px;
+
+  font-size: 14px;
+  line-height: 16.41px;
+  font-weight: 500;
+}
+
+.links-list a {
+  color: #FFFFFF;
+}
+
+.cart-profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+}
