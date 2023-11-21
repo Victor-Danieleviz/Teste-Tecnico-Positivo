@@ -14,10 +14,12 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="header-container">
       <div class="logo-nav-container">
-        <img src="img/vaio-logo.svg" alt="VAIO" class="vaio-logo">
+        <a href="">
+          <img src="img/vaio-logo.svg" alt="VAIO" class="vaio-logo">
+        </a>
         <nav>
           <ul class="links-list">
             <li><a href="">NOTEBOOKS</a></li>
@@ -37,108 +39,134 @@
     </div>
   </header>
 
-  <main>
-    <section>
+  <main class="main">
+    <section class="black-friday-container">
       <div>
         <img src="img/black_friday.png" alt="black friday VAIO">
       </div>
-      <div>
-        <h2>Cadastre-se e receba primeiro as ofertas da Black Friday</h2>
-        <form action="">
-          <input type="text" placeholder="Digite seu nome" required>
-          <input type="text" placeholder="Digite seu e-mail" required>
-          <input type="text" placeholder="Número do celular">
-          <input type="checkbox" id="checkbox" required>
-          <label for="checkbox">
-            Utilizamos seus dados com a finalidade de orientar sobre produtos e demais informações pertinentes. Para
-            informações sobre a utilização dos seus dados consulte nossa Política de Privacidade.
-          </label>
-          <button type="submit">Cadastrar</button>
+      <div class="form-container">
+        <h2 class="form-title">Cadastre-se e receba primeiro as ofertas da Black Friday</h2>
+        <form action="" class="form">
+          <input type="text" placeholder="Digite seu nome" class="input-text" required>
+          <input type="text" placeholder="Digite seu e-mail" class="input-text" required>
+          <input type="text" placeholder="Número do celular" class="input-text">
+          <div class="terms-container">
+            <div class="checkbox-container">
+              <input type="checkbox" id="checkbox" required>
+              <span class="checkmark"></span>
+            </div>
+            <label for="checkbox" class="terms-label">
+              Utilizamos seus dados com a finalidade de orientar sobre produtos e demais informações pertinentes. Para
+              informações sobre a utilização dos seus dados consulte nossa Política de Privacidade.
+            </label>
+          </div>
+          <button type="submit" class="btn-register">Cadastrar</button>
         </form>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Pague da sua maneira</h2>
-        <p>
-          A VAIO® disponibiliza muitas formas de pagamento para sua comodidade.
-        </p>
+    <section class="payments-container">
+      <h2 class="payments-title">Pague da sua maneira</h2>
+      <p class="payments-description">
+        A VAIO® disponibiliza muitas formas de pagamento para sua comodidade.
+      </p>
       </div>
-      <div>
-        <div>
-          <img src="img/pix.png" alt="">
+      <div class="payment-options-container">
+        <div class="payment-option rows-2">
+          <div class="image-container">
+            <img src="img/pix.png" alt="">
+          </div>
           <h3>Pix</h3>
-          <p>Ganhe desconto pagando à vista</p>
+          <p class="description">Ganhe desconto pagando à vista</p>
         </div>
-        <div>
-          <img src="img/credit_card.png" alt="cartão de crédito">
+        <div class="payment-option">
+          <div class="image-container">
+            <img src="img/credit_card.png" alt="cartão de crédito">
+          </div>
           <h3>Pague com dois cartões</h3>
-          <p>Em até 10x sem juros</p>
+          <p class="description">Em até 10x sem juros</p>
         </div>
-        <div>
-          <img src="img/bank_slip.png" alt="boleto">
-          <h3>Boleto parcelado em até 24x*</h3>
-          <p>*Sujeito a análise de crédito. juros a partir de 1,99% a.m.</p>
-        </div>
-        <div>
-          <img src="img/nupay.png" alt="logo NUPay">
+        <div class="payment-option">
+          <div class="image-container">
+            <img src="img/nupay.png" alt="logo NUPay">
+          </div>
           <h3>Pague em até 15x sem juros</h3>
-          <p>* É necessário ser cliente nubank e ter limite disponível no valor total da compra</p>
+          <p class="observation">* É necessário ser cliente nubank e ter limite disponível no valor total da compra</p>
         </div>
-        <div>
-          <img src="img/picpay.png" alt="logo PicPay">
+        <div class="payment-option">
+          <div class="image-container">
+            <img src="img/bank_slip.png" alt="boleto">
+          </div>
+          <h3>Boleto parcelado em até 24x*</h3>
+          <p class="observation">*Sujeito a análise de crédito. juros a partir de 1,99% a.m.</p>
+        </div>
+        <div class="payment-option">
+          <div class="image-container">
+            <img src="img/picpay.png" alt="logo PicPay">
+          </div>
           <h3>PicPay</h3>
-          <p>Pague direto do seu celular</p>
+          <p class="description">Pague direto do seu celular</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="notebook-container">
+      <div class="image-container">
         <img src="img/notebook.png" alt="notebook">
       </div>
-      <div>
-        <h2>Notebooks VAIO: Potencia para diversas necessidades:</h2>
-        <p>
-          O processador de um notebook é o cérebro do seu dispositivo, por isso é muito importante que ele tenha a
-          potência certa seja para o trabalho ou entretenimento. Na Black Friday VAIO você encontra modelos equipados
-          com processadores Core i5 e i7 que são ideais para garantir um desempenho excepcional.
-        </p>
-        <p>
-          Oferecemos também a opção de processadores AMD que igualmente oferecem um excelente desempenho. Os
-          processadores AMD são conhecidos por sua capacidade de lidar com tarefas intensivas e oferecer um desempenho
-          gráfico notável. Se você é um entusiasta de jogos, criador de conteúdo ou profissional que demanda poder de
-          processamento, os notebooks VAIO AMD são uma escolha sólida desta Black Friday. Eles não apenas fornecem a
-          potência necessária, mas também a confiabilidade que você espera da marca VAIO. E o melhor de tudo?
-        </p>
-        <p>
-          Todos os modelos estão com os melhores descontos, fazendo a diferença no seu bolso. Confira nossa seleção!
-        </p>
+      <div >
+        <h2>Notebooks VAIO: Potência para diversas necessidades:</h2>
+        <div class="notebook-text-container">
+          <p>
+            O processador de um notebook é o cérebro do seu dispositivo, por isso é muito importante que ele tenha a
+            potência certa seja para o trabalho ou entretenimento. Na Black Friday VAIO você encontra modelos equipados
+            com processadores Core i5 e i7 que são ideais para garantir um desempenho excepcional.
+          </p>
+          <p>
+            Oferecemos também a opção de processadores AMD que igualmente oferecem um excelente desempenho. Os
+            processadores AMD são conhecidos por sua capacidade de lidar com tarefas intensivas e oferecer um desempenho
+            gráfico notável. Se você é um entusiasta de jogos, criador de conteúdo ou profissional que demanda poder de
+            processamento, os notebooks VAIO AMD são uma escolha sólida desta Black Friday. Eles não apenas fornecem a
+            potência necessária, mas também a confiabilidade que você espera da marca VAIO. E o melhor de tudo?
+          </p>
+          <p>
+            Todos os modelos estão com os melhores descontos, fazendo a diferença no seu bolso. Confira nossa seleção!
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div>
-      <img src="img/payment-icon.svg" alt="código de barras">
-      <h4>10% DE DESCONTO</h4>
-      <p>No boleto bancário</p>
-    </div>
-    <div>
-      <img src="img/credit-card-icon.svg" alt="cartão de crédito">
-      <h4>EM ATÉ 10X S/ JUROS</h4>
-      <p>Para compras no cartão</p>
-    </div>
-    <div>
-      <img src="img/japan-flag-icon.svg" alt="bandeira do japão">
-      <h4>TECNOLOGIA JAPONESA</h4>
-      <p>Produzido no Brasil</p>
-    </div>
-    <div>
-      <img src="img/safety-icon.svg" alt="segurança">
-      <h4>AMBIENTE SEGURO</h4>
-      <p>Compra 100% protegida</p>
+    <div class="footer-container">
+      <div class="footer-item">
+        <div class="item-image-container">
+          <img src="img/payment-icon.svg" alt="código de barras">
+        </div>
+        <h4>10% DE DESCONTO</h4>
+        <p>No boleto bancário</p>
+      </div>
+      <div class="footer-item">
+        <div class="item-image-container">
+          <img src="img/credit-card-icon.svg" alt="cartão de crédito">
+        </div>
+        <h4>EM ATÉ 10X S/ JUROS</h4>
+        <p>Para compras no cartão</p>
+      </div>
+      <div class="footer-item">
+        <div class="item-image-container">
+          <img src="img/japan-flag-icon.svg" alt="bandeira do japão">
+        </div>
+        <h4>TECNOLOGIA JAPONESA</h4>
+        <p>Produzido no Brasil</p>
+      </div>
+      <div class="footer-item">
+        <div class="item-image-container">
+          <img src="img/safety-icon.svg" alt="segurança">
+        </div>
+        <h4>AMBIENTE SEGURO</h4>
+        <p>Compra 100% protegida</p>
+      </div>
     </div>
   </footer>
 </body>
