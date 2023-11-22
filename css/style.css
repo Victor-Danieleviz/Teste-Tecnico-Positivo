@@ -92,7 +92,7 @@ footer {
   line-height: 43.2px;
 }
 
-.form {
+#form {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -178,6 +178,7 @@ footer {
 }
 
 .terms-label {
+  max-width: 520px;
   margin-left: 16px;
 
   font-size: 14px;
@@ -353,4 +354,21 @@ footer {
 
   height: 46px;
   margin-bottom: 24px;
+}
+
+.message-required {
+  display: none;
+  margin-left: 16px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .black-friday-container {
+    align-items: center;
+    border: 1px solid red;
+  }
+
+  .black-friday-container img {
+    display: none;
+  }
 }

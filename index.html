@@ -46,10 +46,19 @@
       </div>
       <div class="form-container">
         <h2 class="form-title">Cadastre-se e receba primeiro as ofertas da Black Friday</h2>
-        <form action="" class="form">
-          <input type="text" placeholder="Digite seu nome" class="input-text" required>
-          <input type="text" placeholder="Digite seu e-mail" class="input-text" required>
-          <input type="text" placeholder="Número do celular" class="input-text">
+        <form id="form">
+          <div>
+            <input type="text" placeholder="Digite seu nome" class="input-text" id="name" required>
+            <span class="message-required" id="invalidName">Digite um nome válido.</span>
+          </div>
+          <div>
+            <input type="email" placeholder="Digite seu e-mail" class="input-text" id="email" required>
+            <span class="message-required" id="invalidEmail">Digite um e-mail válido.</span>
+          </div>
+          <div>
+            <input type="number" placeholder="Número do celular" class="input-text" id="phone" required>
+            <span class="message-required" id="invalidPhone">Digite um telefone válido.</span>
+          </div>
           <div class="terms-container">
             <div class="checkbox-container">
               <input type="checkbox" id="checkbox" required>
@@ -114,7 +123,7 @@
       <div class="image-container">
         <img src="img/notebook.png" alt="notebook">
       </div>
-      <div >
+      <div>
         <h2>Notebooks VAIO: Potência para diversas necessidades:</h2>
         <div class="notebook-text-container">
           <p>
@@ -169,6 +178,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
