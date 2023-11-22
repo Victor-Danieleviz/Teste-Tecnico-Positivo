@@ -10,17 +10,21 @@
 }
 
 header {
-  width: 100%;
-  background-color: #313131;
   display: flex;
   justify-content: center;
+
+  width: 100%;
+
+  border-bottom: 1px solid #333333;
+  background-color: black;
 }
 
 main {
-  background-color: #090909;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  background-color: #090909;
 }
 
 footer {
@@ -41,15 +45,15 @@ footer {
 
   margin: 0 24px;
 
-  width: 1280px;
-  height: 80px;
+  width: 1540px;
+  height: 79px;
 }
 
 .logo-nav-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 130px;
+  gap: 69px;
 }
 
 .vaio-logo {
@@ -63,7 +67,7 @@ footer {
 
   font-size: 14px;
   line-height: 16.41px;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 .cart-profile-container {
@@ -90,9 +94,8 @@ footer {
 .form-title {
   width: 444px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 43.2px;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 #form {
@@ -156,7 +159,7 @@ footer {
   height: 16px;
 
   border-radius: 2px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #767676;
 }
 
 .checkmark:after {
@@ -169,7 +172,7 @@ footer {
   width: 5px;
   height: 10px;
 
-  border: solid white;
+  border: solid #767676;
   border-width: 0 3px 3px 0;
 
   -webkit-transform: rotate(45deg);
@@ -182,7 +185,7 @@ footer {
 }
 
 .terms-label {
-  max-width: 520px;
+  max-width: 500px;
   margin-left: 16px;
 
   font-size: 14px;
@@ -193,8 +196,8 @@ footer {
 }
 
 .btn-register {
-  width: 216px;
-  height: 48px;
+  width: 275px;
+  height: 52px;
 
   background-color: #3952EC;
   border: none;
@@ -209,6 +212,39 @@ footer {
   cursor: pointer;
 }
 
+.offers-container {
+  display: flex;
+  align-items: center;
+  width: 1260px;
+}
+
+.offers-info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  height: 469px;
+} 
+
+.offers-info h2 {
+  margin-top: 24px;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.offers-info p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.offers-container .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .payments-container {
   display: flex;
   flex-direction: column;
@@ -219,10 +255,11 @@ footer {
 }
 
 .payments-title {
+  margin-top: 90px;
   margin-bottom: 16px;
 
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 500;
   line-height: 43.2px;
 }
 
@@ -290,20 +327,21 @@ footer {
 
 .notebook-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 69px;
 
   margin-top: 92px;
   margin-bottom: 124px;
 
   width: 100%;
-  max-width: 1280px;
+  max-width: 1260px;
 }
 
 .notebook-container .image-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 98px;
+  padding: 32px;
 }
 
 .notebook-container h2 {
@@ -311,7 +349,7 @@ footer {
   width: 520px;
 
 
-  font-size: 36px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 43.2px;
 }
@@ -320,14 +358,10 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
-
-  width: 520px;
-}
-
-.notebook-text-container {
+  
   font-size: 16px;
-  font-weight: 400;
-  line-height: 22.4px;
+  font-weight: 300;
+  line-height: 32px;
 }
 
 .footer-container {
@@ -381,15 +415,40 @@ footer {
     max-width: 260px;
   }
 
+  .offers-container {
+    max-width: 1024px;
+  }
+
   .payment-option {
     width: 260px;
   }
 
   .notebook-container {
+    justify-content: start;
+    align-items: center;
+    gap: 0;
+
     max-width: 1024px;
   }
 
+  .notebook-container h2 {
+    width: 400px;
+  }
+
+  .notebook-text-container {
+    width: 400px;
+  }
+
   .notebook-container .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .notebook-container .image-container img {
+    padding: 0;
+    width: 520px;
     margin-left: 0;
   }
 
@@ -424,6 +483,20 @@ footer {
 
   .terms-label {
     max-width: 440px;
+  }
+
+  .offers-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    
+    width: 420px;
+    margin-bottom: 64px;
+  }
+
+  .offers-container img {
+    width: 315px;
   }
 
   .payment-options-container {
@@ -468,9 +541,8 @@ footer {
     width: 100%;
   }
 
-  .notebook-container img {
-    width: 75%;
-    height: 75%;
+  .notebook-container .image-container img {
+    width: 315px;
   }
 
   .footer-container {
@@ -537,6 +609,19 @@ footer {
     text-align: start;
   }
 
+  .offers-container {
+    width: 85%;
+  }
+
+  .offers-container img {
+    width: 200px;
+  }
+
+  .offers-info {
+    width: 100%;
+    height: auto;
+  }
+
   .notebook-container {
     flex-direction: column-reverse;
     align-items: center;
@@ -555,6 +640,10 @@ footer {
   .notebook-text-container {
     width: 100%;
     text-align: start;
+  }
+
+  .notebook-container .image-container img {
+    width: 200px;
   }
 
   .footer-item {
