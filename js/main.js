@@ -35,7 +35,7 @@ function verifyInput (id, isValid ) {
   if (isValid()){
     message.style.display = "none";
   } else {
-    message.style.display = "inline";
+    message.style.display = "block";
   }
 }
 

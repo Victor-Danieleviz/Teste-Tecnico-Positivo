@@ -12,6 +12,8 @@
 header {
   width: 100%;
   background-color: #313131;
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -37,9 +39,10 @@ footer {
   align-items: center;
   justify-content: space-between;
 
-  height: 80px;
+  margin: 0 24px;
 
-  margin: 0px 320px;
+  width: 1280px;
+  height: 80px;
 }
 
 .logo-nav-container {
@@ -74,7 +77,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 124px;
-  max-width: 1260px;
+  max-width: 1280px;
 }
 
 .form-container {
@@ -99,7 +102,8 @@ footer {
 }
 
 .input-text {
-  width: 502px;
+  width: 100%;
+  max-width: 502px;
   height: 48px;
 
   padding-left: 18px;
@@ -292,10 +296,13 @@ footer {
   margin-bottom: 124px;
 
   width: 100%;
-  max-width: 1260px;
+  max-width: 1280px;
 }
 
 .notebook-container .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 98px;
 }
 
@@ -328,23 +335,21 @@ footer {
   justify-content: space-around;
   align-items: center;
 
-  width: 1260px;
+  width: 1280px;
   margin-top: 44px;
+}
+
+.footer-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 .footer-item h4 {
   margin-bottom: 8px;
-
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
 }
 
 .footer-item p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-
   color: #767676;
 }
 
@@ -360,15 +365,204 @@ footer {
   display: none;
   margin-left: 16px;
   color: #FFFFFF;
+  
+}
+
+@media (max-width: 1280px) {
+  .input-text {
+    max-width: 260px;
+  }
+
+  .form-title {
+    max-width: 260px;
+  }
+
+  .terms-label {
+    max-width: 260px;
+  }
+
+  .payment-option {
+    width: 260px;
+  }
+
+  .notebook-container {
+    max-width: 1024px;
+  }
+
+  .notebook-container .image-container {
+    margin-left: 0;
+  }
+
+  .notebook-container img {
+    width: 85%;
+    height: 85%;
+  }
 }
 
 @media (max-width: 1024px) {
   .black-friday-container {
-    align-items: center;
-    border: 1px solid red;
+    gap: 0;
   }
 
   .black-friday-container img {
     display: none;
+  }
+
+  .form-container {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+
+  .input-text {
+    max-width: 440px;
+  }
+
+  .form-title {
+    max-width: 440px;
+    font-size: 28px;
+  }
+
+  .terms-label {
+    max-width: 440px;
+  }
+
+  .payment-options-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .payments-container h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .payment-option {
+    width: 380px;
+  }
+
+  .rows-2 {
+    grid-row: span 1;
+    max-width: none;
+  }
+  
+  .rows-2 .image-container {
+    margin-top: 0;
+  }
+
+  .notebook-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    
+    width: 420px;
+  }
+
+  .notebook-container h2 {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .notebook-text-container {
+    width: 100%;
+  }
+
+  .notebook-container img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .footer-container {
+    width: 75%;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-nav-container{
+    gap: 0;
+  }
+
+  .links-list {
+    gap: 24px;
+  }
+
+  .logo-nav-container img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    height: 120px;
+  }
+
+  .form-title {
+    max-width: 280px;
+  }
+
+  .terms-label {
+    max-width: 280px;
+  }
+
+  .input-text {
+    max-width: 280px;
+  }
+
+  .btn-register {
+    width: 296px;
+  }
+
+  .payments-container{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .payments-description {
+    width: 220px;
+    text-align: start;
+  }
+
+  .payment-option {
+    width: 220px;
+  }
+
+  .payment-option p {
+    text-align: start;
+  }
+
+  .notebook-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    width: 85%;
+    min-width: 240px;
+  }
+
+  .notebook-container h2 {
+    font-size: 28px;
+    text-align: start;
+  }
+
+  .notebook-text-container {
+    width: 100%;
+    text-align: start;
+  }
+
+  .footer-item {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .item-image-container img {
+    width: 60px;
   }
 }
